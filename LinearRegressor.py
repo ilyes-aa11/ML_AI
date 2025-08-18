@@ -4,9 +4,6 @@ import numpy as np
 
 data = pd.read_csv("score.csv")
 
-# data.plot(x="Hours",y="Scores",kind="scatter")
-# plt.show()
-
 # x & y are two list containing the data points
 def linear_regressor(x: list,y: list):
     m , b = 0.0 , 0.0 
