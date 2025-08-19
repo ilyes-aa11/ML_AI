@@ -3,7 +3,7 @@ import heapq as hq
 
 # points = [point_1, point_2 , ... , point_n]
 # point_i = [feature_1, feature_2, ... , feature_m , class_label]
-def kNearestNeighbors(k: int , datapoint: list , points: list):
+def kNearestNeighbors_classifier(k: int , datapoint: list , points: list):
     if k > len(points):
         raise ValueError("k must not be larger than the total number of data points")
     
@@ -45,4 +45,4 @@ points = [point for point in data[["Age","Gender","Height","Weight","Label"]].va
 for p in points:
     p[1] = 1 if p[1] == "Male" else 0
 
-print(kNearestNeighbors(15,[16,1,160,50],points))
+print(kNearestNeighbors_classifier(15,[16,1,160,50],points))
