@@ -45,4 +45,4 @@ points = [point for point in data[["Age","Gender","Height","Weight","Label"]].va
 for p in points:
     p[1] = 1 if p[1] == "Male" else 0
 
-print(kNearestNeighbors(15,[19,1,187,50],points))
+print(kNearestNeighbors(15,[16,1,160,50],points))
