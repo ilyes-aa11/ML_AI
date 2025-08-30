@@ -40,7 +40,7 @@ def kNearestNeighbors_classifier(k: int , datapoint: list , points: list):
 
 
 # testing
-data = pd.read_csv("ObesityClassification.csv")
+data = pd.read_csv("./datasets/ObesityClassification.csv")
 points = [point for point in data[["Age","Gender","Height","Weight","Label"]].values.tolist()]
 for p in points:
     p[1] = 1 if p[1] == "Male" else 0
