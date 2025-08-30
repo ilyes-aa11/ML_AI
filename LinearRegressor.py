@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-data = pd.read_csv("score.csv")
+data = pd.read_csv("./datasets/score.csv")
 
 # x & y are two list containing the data points
 def linear_regressor(x: list,y: list):
