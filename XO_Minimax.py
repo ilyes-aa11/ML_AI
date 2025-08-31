@@ -4,8 +4,8 @@ from time import sleep
 # Unbeatable XO bot by utilizing the Minimax algorithm
 
 def evalBoard(board):
-    # returns 1 for p1 winning
-    # returns -1 for p2 winning
+    # returns 1 for player1 i.e X_player winning
+    # returns -1 for player2 i.e O_player winning
     # returns 0 for tie
     # returns 2 for none of the above
     for i in range(3):
